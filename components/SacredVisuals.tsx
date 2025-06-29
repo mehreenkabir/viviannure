@@ -4,16 +4,18 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import styles from '../styles/SacredVisuals.module.css';
 
-const draw = {
+import type { Variants } from 'framer-motion';
+
+const draw: Variants = {
   hidden: { pathLength: 0, opacity: 0 },
-  visible: (i: number) => ({
+  visible: {
     pathLength: 1,
     opacity: 1,
     transition: {
-      pathLength: { delay: i * 0.3, type: 'spring-generator', duration: 2, bounce: 0 },
-      opacity: { delay: i * 0.3, duration: 0.1 },
+      pathLength: { type: 'spring', duration: 2, bounce: 0 },
+      opacity: { duration: 0.1 },
     },
-  }),
+  },
 };
 
 // A more profound, architectural visual for before the footer
