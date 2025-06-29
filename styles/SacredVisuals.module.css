@@ -1,0 +1,37 @@
+/* Dainty Showcase Styles */
+.showcaseContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  margin: 2rem 0 4rem 0;
+  opacity: 0.6;
+}
+
+.arch {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #d6c1b1;
+  border-bottom: none;
+  border-radius: 50% 50% 0 0;
+  margin: 0 -30px; /* Overlap them slightly */
+}
+
+.verticalLine {
+  width: 1px;
+  height: 150px;
+  background-color: #d6c1b1;
+}
+
+/* Architectural Breath Styles */
+.architecturalSvg {
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  stroke: #d6c1b1;
+  stroke-width: 0.5;
+  fill: none;
+  display: block;
+  margin: 6rem auto;
+  opacity: 0.7;
+}

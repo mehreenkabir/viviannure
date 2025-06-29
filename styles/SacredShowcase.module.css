@@ -1,0 +1,17 @@
+.showcaseWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0 auto 2.5rem auto;
+  padding-top: 2.5rem;
+  padding-bottom: 0.5rem;
+  background: transparent;
+}
+
+.showcaseSvg {
+  width: 100%;
+  max-width: 420px;
+  height: 120px;
+  display: block;
+}

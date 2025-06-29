@@ -1,0 +1,50 @@
+.aboutSection {
+  width: 100%;
+  max-width: 700px;
+  margin: 6rem auto 0 auto;
+  padding: 2.5rem 1.5rem 4rem 1.5rem;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.7rem;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 0.04em;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.textBlock {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+  color: #333333;
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.signature {
+  color: #d6c1b1;
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-top: 2.5rem;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .aboutSection {
+    margin-top: 3rem;
+    padding: 1.2rem 0.5rem 2rem 0.5rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .textBlock {
+    font-size: 1.05rem;
+  }
+}

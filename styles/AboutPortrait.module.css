@@ -1,0 +1,16 @@
+.portraitWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem 0 1.5rem 0;
+  width: 100%;
+}
+
+.portraitImg {
+  border-radius: 1.5rem;
+  max-width: 340px;
+  width: 100%;
+  height: auto;
+  box-shadow: none;
+  background: transparent;
+}

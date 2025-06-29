@@ -1,0 +1,147 @@
+
+/* Contact form is now removed, but keep for reference if needed. */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.7rem;
+  margin: 3.5rem auto 0 auto;
+  max-width: 420px;
+  width: 100%;
+  background: transparent;
+  opacity: 1;
+  pointer-events: auto;
+  height: auto;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+@media (max-width: 600px) {
+  .form {
+    max-width: 98vw;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    gap: 2rem;
+  }
+  .form label,
+  .inviteLabel {
+    font-size: 1rem;
+  }
+  .form input,
+  .form textarea {
+    font-size: 1rem;
+    padding: 0.8rem 0.8rem;
+  }
+  .form button,
+  .inviteButton {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+  }
+}
+/* Sacred invitation block for Contact page */
+.invitationBlock {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  color: #d6c1b1;
+  font-size: 1.35rem;
+  text-align: center;
+  margin: 4.5rem auto 3.5rem auto;
+  letter-spacing: 0.01em;
+  max-width: 40ch;
+  line-height: 1.7;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.4s cubic-bezier(0.16,1,0.3,1), transform 1.4s cubic-bezier(0.16,1,0.3,1);
+}
+
+.invitationBlock.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.invitationBlock a {
+  color: #a8c3d1;
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.18rem;
+  letter-spacing: 0.01em;
+  transition: color 0.7s cubic-bezier(0.16,1,0.3,1), text-shadow 1.2s cubic-bezier(0.16,1,0.3,1);
+}
+.invitationBlock a:hover {
+  color: #a8c3d1;
+  text-shadow: 0 0 8px #a8c3d1, 0 0 16px #a8c3d1;
+}
+
+.form label,
+.inviteLabel {
+  width: 100%;
+  font-family: 'Cormorant Garamond', serif;
+  color: #333333;
+  font-size: 1.1rem;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+  opacity: 0.92;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #d6c1b1;
+  border-radius: 0.7rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: #333333;
+  padding: 1rem 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+  outline: none;
+  transition: border-color 0.7s cubic-bezier(0.16,1,0.3,1), box-shadow 1.2s cubic-bezier(0.16,1,0.3,1);
+  box-shadow: none;
+  resize: vertical;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #a8c3d1;
+  box-shadow: 0 0 8px 2px #a8c3d1;
+  transition: border-color 0.7s cubic-bezier(0.16,1,0.3,1), box-shadow 1.2s cubic-bezier(0.16,1,0.3,1);
+}
+
+.form button,
+.inviteButton {
+  margin-top: 1.5rem;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  color: #333333;
+  background: transparent;
+  border: 1px solid #d6c1b1;
+  border-radius: 0.7rem;
+  padding: 0.9rem 2.5rem;
+  cursor: pointer;
+  transition: color 0.7s cubic-bezier(0.16,1,0.3,1), box-shadow 1.2s cubic-bezier(0.16,1,0.3,1), border-color 0.7s cubic-bezier(0.16,1,0.3,1);
+  box-shadow: none;
+  letter-spacing: 0.01em;
+}
+
+.form button:hover:not(:disabled),
+.form button:focus:not(:disabled),
+.inviteButton:hover:not(:disabled),
+.inviteButton:focus:not(:disabled) {
+  color: #a8c3d1;
+  border-color: #a8c3d1;
+  box-shadow: 0 0 8px 2px #a8c3d1;
+  transition: color 0.7s cubic-bezier(0.16,1,0.3,1), box-shadow 1.2s cubic-bezier(0.16,1,0.3,1), border-color 0.7s cubic-bezier(0.16,1,0.3,1);
+}
+
+.form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+
+/* Remove inviteNote for new design */

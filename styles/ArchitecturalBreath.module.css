@@ -1,0 +1,29 @@
+.breathWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 5rem auto 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 2.5rem;
+  background: transparent;
+}
+
+.breathSvg {
+  width: 100%;
+  max-width: 420px;
+  height: 120px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .breathWrapper {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .breathSvg {
+    max-width: 95vw;
+    height: 80px;
+  }
+}

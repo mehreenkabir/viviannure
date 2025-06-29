@@ -1,42 +1,57 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: 'Cormorant Garamond', serif;
+  background-color: #fdfaf5;
+  color: #333333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: clamp(15px, 2.5vw, 20px);
+  line-height: 1.7;
 }
+
+
 
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+a:hover {
+  color: #a8c3d1;
+}
+
+::selection {
+  background: #a8c3d1;
+  color: #fdfaf5;
+}
+
+::-moz-selection {
+  background: #a8c3d1;
+  color: #fdfaf5;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 1.18;
+  font-size: clamp(1.3rem, 5vw, 2.5rem);
+}
+
+@media (max-width: 600px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 6vw;
+    line-height: 1.22;
   }
 }
