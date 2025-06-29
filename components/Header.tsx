@@ -7,7 +7,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import styles from '../styles/Header.module.css';
 import sacredMenuStyles from '../styles/SacredMenu.module.css';
 import Hamburger from './Hamburger';
-import MoonIcon from './MoonIcon';
 import SacredOverlay from './SacredOverlay';
 import { Star, Envelope, VN } from './SacredSymbols';
 
@@ -69,57 +68,7 @@ const Header: React.FC = () => {
         <h1 className={styles.title}>Vivian Nuré</h1>
       </div>
       <div style={{ marginLeft: 'auto', zIndex: 200, display: 'flex', alignItems: 'center' }}>
-        <button
-          aria-label={open ? 'Close menu' : 'Open menu'}
-          onClick={() => setOpen((v) => !v)}
-          style={{
-            background: 'none',
-            border: 'none',
-            padding: 0,
-            margin: 0,
-            width: 44,
-            height: 44,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            cursor: 'pointer',
-            zIndex: 200,
-            transition: 'color 0.5s cubic-bezier(0.42,0,0.58,1)',
-          }}
-        >
-          <AnimatePresence initial={false} mode="wait">
-            {!open && (
-              <motion.div
-                key="hamburger"
-                initial={{ opacity: 0, rotate: -20 }}
-                animate={{ opacity: 1, rotate: 0 }}
-                exit={{ opacity: 0, rotate: 20 }}
-                transition={{ duration: 0.5 }}
-              >
-                <Hamburger isOpen={false} toggle={() => {}} />
-              </motion.div>
-            )}
-            {open && (
-              <motion.div
-                key="moon"
-                initial={{ opacity: 0, scale: 0.7, rotate: 20 }}
-                animate={{ opacity: 1, scale: 1, rotate: 0 }}
-                exit={{ opacity: 0, scale: 0.7, rotate: -20 }}
-                transition={{ duration: 0.7 }}
-                style={{ cursor: 'pointer' }}
-                onClick={e => {
-                  e.stopPropagation();
-                  setOpen(false);
-                }}
-                tabIndex={0}
-                aria-label="Close menu"
-                role="button"
-              >
-                <MoonIcon />
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </button>
+        <Hamburger isOpen={open} toggle={() => setOpen((v) => !v)} />
       </div>
       <AnimatePresence>
         {open && (
