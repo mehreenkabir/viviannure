@@ -7,7 +7,7 @@ import { Star } from '../components/SacredSymbols';
 
 const aboutText = [
   "My path is rooted in resonance; in music, in healing, in presence. Classically trained from childhood, I performed across Europe before I turned 18. Life then drew me into a nonlinear path of discovery, immersing me in ancient healing arts and the science of transformation.",
-  "Over the past decade I have cultivated a rare, high-touch skill set for deep recalibration. I weaving vibrational medicine, voice, somatic attunement, and neuroplasticity into experiences where sacred meets science. Clients describe the work as bold, intuitive, and otherworldly. Some clients witness chromatic visions and profound shifts in awareness. These sessions are not treatments; they are rewiring rituals.",
+  "Over the past decade I have cultivated a rare, high-touch skill set for deep recalibration. By weaving vibrational medicine, voice, somatic attunement, and neuroplasticity into experiences where sacred meets science. Clients describe the work as bold, intuitive, and otherworldly. Some clients witness chromatic visions and profound shifts in awareness. These sessions are not treatments; they are rewiring rituals.",
   "Today I work privately with executives, artists, and visionaries ready to remember who they are and live from that place. The experiences are intimate, precise, and available by personal introduction or direct inquiry only.",
   "I call this work Resonant Rewiring: a return to the body’s innate intelligence and a remembering of wholeness."
 ];
